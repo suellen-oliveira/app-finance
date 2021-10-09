@@ -8,24 +8,24 @@ import {
 } from "../../components/templates";
 import Link from "./../../components/molecules/Link";
 
-const Login = () => {
+const Register = () => {
   return (
     <TemplateContainer>
       <TemplateContent>
         <Sidebar />
         <TemplateMainHeroSection>
-          <h1 className="font-bold text-3xl">Acesse sua conta</h1>
+          <h1 className="font-bold text-3xl">Crie sua conta</h1>
           <form className="flex flex-col w-full gap-4 max-w-xs">
             <InputText label="Email" type="email" />
             <InputText label="Senha" type="password" />
 
-            <Button disabled>Entrar</Button>
+            <Button disabled>Criar Conta</Button>
           </form>
-          <Link url="/register">Criar conta</Link>
+          <Link url="/">Já possuo uma conta</Link>
         </TemplateMainHeroSection>
       </TemplateContent>
     </TemplateContainer>
   );
 };
 
-export default Login;
+export default Register;
